@@ -31,12 +31,11 @@ services:
     environment:
       ETHEREUM_JSONRPC_HTTP_URL: https://rpc-testnet.akkad.network/
       ETHEREUM_JSONRPC_TRACE_URL: https://rpc-testnet.akkad.network/
-      ETHEREUM_JSONRPC_WS_URL: ws://ws-rpc-testnet.akkad.network/
+      ETHEREUM_JSONRPC_WS_URL: wss://ws-rpc-testnet.akkad.network/
       NEXT_PUBLIC_API_PROTOCOL: https
       CHAIN_ID: '1000000'
       FIRST_BLOCK: 1
       TRACE_FIRST_BLOCK: 1
-      PRECOMPILED_CONTRACTS_CONFIG_PATH: /app/precompiles.json
 
   visualizer:
     extends:
